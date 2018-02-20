@@ -64,11 +64,14 @@ function removeFromCart(item) {
   }
    if (keysOnly.indexOf(`item`)===-1){
       console.log("That item is not in your cart.")
-      debugger
     } else {
-      delete cart[keysOnly.indexOf(`item`)];
-      return cart
-      }
+    for (var item in cart) {
+      if (cart.hasOwnProperty(item)) {
+    delete cart[cart.indexOf(item)];
+    return cart
+  }
+}
+}
 }
 
 function placeOrder(cardNumber) {
