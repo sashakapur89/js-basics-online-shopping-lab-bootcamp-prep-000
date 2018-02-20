@@ -65,7 +65,6 @@ function removeFromCart(item) {
    if (keysOnly.indexOf(`item`)===-1){
       console.log("That item is not in your cart.")
     } else {
-      debugger
     for (var itemName in cart) {
     if (cart.hasOwnProperty(itemName)) {
     delete cart[cart.indexOf(item)];
