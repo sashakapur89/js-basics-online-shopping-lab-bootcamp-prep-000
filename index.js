@@ -66,7 +66,7 @@ function removeFromCart(item) {
    if (keysOnly.indexOf(item)===-1){
       console.log("That item is not in your cart.")
     } else {
-    delete cart[keysOnly.indexOf(item)];
+    cart.splice(keysOnly.indexOf(item), 1);
     return cart;
   }
 }
