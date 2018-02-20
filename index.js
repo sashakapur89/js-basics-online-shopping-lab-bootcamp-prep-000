@@ -61,14 +61,14 @@ function removeFromCart(item) {
   while(n<cart.length){
     keysOnly[keysOnly.length] = Object.keys(cart[n])[0];
     n++;
+    debugger
   }
    if (keysOnly.indexOf(`item`)===-1){
       console.log("That item is not in your cart.")
     } else {
-    for (var itemName in cart) {
-    if (cart.hasOwnProperty(itemName)) {
+    for (item in cart) {
+    if (cart.hasOwnProperty(item)) {
     delete cart[cart.indexOf(item)];
-    cart = cart;
     return cart;
   }
 }
