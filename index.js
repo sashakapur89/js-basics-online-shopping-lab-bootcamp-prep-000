@@ -70,8 +70,6 @@ function removeFromCart(item) {
     return cart;
   }
 }
-}
-}
 
 function placeOrder(cardNumber) {
   if(cardNumber === undefined){
